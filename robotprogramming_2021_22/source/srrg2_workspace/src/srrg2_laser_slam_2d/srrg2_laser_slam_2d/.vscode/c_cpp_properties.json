@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/devel/include/**",
+                "/home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/devel/lib/**",
+                "/home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/devel/share/**",
+                "/home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/build/**",
+                "/opt/ros/noetic/include/**",
+                "/home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/src/srrg2_ld06/include/**",
+                "/home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/src/srrg2_navigation_2d/srrg2_map_server/include/**",
+                "/usr/include/**",
+                "/home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/src/srrg2_core/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

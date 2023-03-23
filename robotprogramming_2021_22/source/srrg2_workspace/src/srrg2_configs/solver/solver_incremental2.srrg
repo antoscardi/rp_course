@@ -1,0 +1,5 @@
+#!/usr/bin/env srrg2_shell
+open <ARG_1>
+set runner input_file <ARG_2>
+add_canvas b mostra
+run runner

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orazio Robot Web Controller</title>
+    <script src="orazio.js" type="text/javascript"></script>
+  </head>
+  <body>
+<table border="2">
+  <tr>
+    <H2>
+    <td> <a href="orazio_system.html?system" target="_parent"> System </a> </td>
+    <td> <a href="orazio_joint0.html?joint0" target="_parent"> Joint0 </a> </td>
+    <td> <a href="orazio_joint1.html?joint1" target="_parent"> Joint1 </a> </td>
+    <td> <a href="orazio_joint2.html?joint2" target="_parent"> Joint2 </a> </td>
+    <td> <a href="orazio_joint3.html?joint3" target="_parent"> Joint3 </a> </td>
+    <td> <a href="orazio_drive.html?kinematics" target="_parent"> Drive </a> </td>
+    <td> <a href="orazio_sonar.html?sonar" target="_parent"> Sonar </a> </td>
+    <td> <a href="orazio_pwm.html?pwm" target="_parent"> PWM </a> </td>
+    <td> <a href="orazio_imu.html?imu" target="_parent"> IMU </a> </td>
+    <td> <a href="orazio_joystick.html?kinematics" target="_parent"> Joystick </a> </td>
+    </H2>
+  </tr>
+</table>
+    <p>
+      <H1>PWM Settings</H1>
+    </p>
+    <p>
+      <h2>
+ <a href="orazio_pwm_help.html"> Click here for help </a>
+      </h2>
+    </p>
+    <p>
+      <table border="2">
+ <tr>
+   <td> <div id='msgBox'>Nothing sent yet!</div> </td>
+   <td>
+<p> <table border="3">
+<tr>
+   <td valign="top"> pwm_params.header.system_enabled </td>
+   <td> <input width="100px" type="text" id="pwm_params_header_system_enabled" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_params.header.system_enabled')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_params.header.update_enabled </td>
+   <td> <input width="100px" type="text" id="pwm_params_header_update_enabled" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_params.header.update_enabled')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_params.pwm_pins[0] </td>
+   <td> <input width="100px" type="text" id="pwm_params_pwm_pins_0_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_params.pwm_pins[0]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_params.pwm_pins[1] </td>
+   <td> <input width="100px" type="text" id="pwm_params_pwm_pins_1_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_params.pwm_pins[1]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_params.pwm_pins[2] </td>
+   <td> <input width="100px" type="text" id="pwm_params_pwm_pins_2_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_params.pwm_pins[2]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_params.pwm_pins[3] </td>
+   <td> <input width="100px" type="text" id="pwm_params_pwm_pins_3_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_params.pwm_pins[3]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_params.pwm_pins[4] </td>
+   <td> <input width="100px" type="text" id="pwm_params_pwm_pins_4_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_params.pwm_pins[4]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_params.pwm_pins[5] </td>
+   <td> <input width="100px" type="text" id="pwm_params_pwm_pins_5_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_params.pwm_pins[5]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_params.pwm_pins[6] </td>
+   <td> <input width="100px" type="text" id="pwm_params_pwm_pins_6_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_params.pwm_pins[6]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_params.pwm_pins[7] </td>
+   <td> <input width="100px" type="text" id="pwm_params_pwm_pins_7_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_params.pwm_pins[7]')"/> SET</td>
+</tr>
+</table> </p>
+     </td>
+ </tr>
+ <tr>
+          <table border="2">
+          <tr>
+     <td> <button type="button" onclick="stop()">STOP</button> </td>
+     <td> <button type="button" onclick="sendPacket('pwm_params')">SEND</button> </td>
+     <td> <button type="button" onclick="storeParams('pwm_params')">STORE</button> </td>
+     <td> <button type="button" onclick="fetchParams('pwm_params')">FETCH</button> </td>
+     <td> <button type="button" onclick="requestParams('pwm_params')">REQUEST</button> </td>
+          </tr>
+          </table>
+   </tr>
+ <tr>
+<p> <table border="3">
+<tr>
+   <td valign="top"> pwm_control.pwm_value[0] </td>
+   <td> <input width="100px" type="text" id="pwm_control_pwm_value_0_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_control.pwm_value[0]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_control.pwm_value[1] </td>
+   <td> <input width="100px" type="text" id="pwm_control_pwm_value_1_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_control.pwm_value[1]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_control.pwm_value[2] </td>
+   <td> <input width="100px" type="text" id="pwm_control_pwm_value_2_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_control.pwm_value[2]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_control.pwm_value[3] </td>
+   <td> <input width="100px" type="text" id="pwm_control_pwm_value_3_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_control.pwm_value[3]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_control.pwm_value[4] </td>
+   <td> <input width="100px" type="text" id="pwm_control_pwm_value_4_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_control.pwm_value[4]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_control.pwm_value[5] </td>
+   <td> <input width="100px" type="text" id="pwm_control_pwm_value_5_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_control.pwm_value[5]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_control.pwm_value[6] </td>
+   <td> <input width="100px" type="text" id="pwm_control_pwm_value_6_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_control.pwm_value[6]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> pwm_control.pwm_value[7] </td>
+   <td> <input width="100px" type="text" id="pwm_control_pwm_value_7_" /> </td>
+   <td> <button type="button" onclick="setVariable('pwm_control.pwm_value[7]')"/> SET</td>
+</tr>
+</table> </p>
+   </tr>
+ <tr>
+   <td> <button type="button" onclick="stop()">STOP</button> </td>
+   <td> <button type="button" onclick="sendPacket('pwm_control')">SEND</button> </td>
+   </tr>
+      </table>
+    </p>
+  </body>
+</html>

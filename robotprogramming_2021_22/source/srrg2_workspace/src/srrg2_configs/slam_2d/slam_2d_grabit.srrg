@@ -1,0 +1,11 @@
+#!/usr/bin/env srrg2_shell 
+echo <ARG_0>: creates a 2d map using the conf file slam_2d.conf
+echo usage: <ARG_0> bag_file map_file
+echo arg_0: <ARG_0>
+echo arg_1: <ARG_1>
+echo arg_2: <ARG_2>
+open slam_2d_grabit.conf
+set source filename <ARG_1>
+add_canvas slam slam
+run runner
+exec mapper saveMap <ARG_2>

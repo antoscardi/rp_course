@@ -1,0 +1,7 @@
+*~
+*.o
+simple
+proc_webctl
+proc_shell
+nohup.out
+index.html

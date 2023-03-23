@@ -1,0 +1,6 @@
+#!/usr/bin/env srrg2_shell
+open planner_2d.conf
+exec source open
+exec sink open
+exec requestor requestMap
+run runner

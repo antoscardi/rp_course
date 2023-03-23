@@ -1,0 +1,9 @@
+#!/usr/bin/env srrg2_shell
+echo **********************************************************
+echo Runs proslam on a bag
+echo usage: <ARG_0> 
+echo **********************************************************
+open proslam_live.conf
+exec source open
+add_canvas slam slam
+run runner

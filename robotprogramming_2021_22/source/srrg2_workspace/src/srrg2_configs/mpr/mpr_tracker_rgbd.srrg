@@ -1,0 +1,10 @@
+#!/usr/bin/env srrg2_shell
+echo ****************************************
+echo <ARG_0>: runs mpr in slam mode on an rgbd bag
+echo usage: <ARG_0> "bagfile"
+echo filename: "<ARG_1>"
+echo ****************************************
+open mpr_tracker_rgbd.conf
+set source_bag filename <ARG_1>
+add_canvas v viewer
+run runner_bag

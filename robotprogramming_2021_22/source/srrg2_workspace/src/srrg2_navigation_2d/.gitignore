@@ -1,0 +1,11 @@
+*~
+\#*
+config/dl.conf
+config/data.log
+config/proc_dist.pgm
+config/proc_occ.pgm
+config/morte_distance.png
+config/index.html
+config/.catkin_tools/
+config/*.bag
+data.log

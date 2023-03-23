@@ -1,0 +1,8 @@
+01_roscore   /opt/ros/<ROS_DISTRO>/bin/roscore
+02_stage     /opt/ros/<ROS_DISTRO>/lib/stage_ros/stageros cappero_laser_odom_diag_obstacle_2020-05-06-16-26-03.world
+03_mapserver <WS_ROOT>/srrg2_map_server/lib/srrg2_map_server/map_server cappero_laser_odom_diag_2020-05-06-16-26-03.yaml
+04_rviz     /opt/ros/<ROS_DISTRO>/bin/rviz
+05_localize <WS_ROOT>/srrg2_executor/lib/srrg2_executor/srrg2_shell -ns run_localizer_live_ms.srrg
+06_planner  <WS_ROOT>/srrg2_executor/lib/srrg2_executor/srrg2_shell -ns run_planner_live_ms.srrg
+07_lplan    <WS_ROOT>/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/planning_robot -c conf_planning_robot.json
+07_joy    <WS_ROOT>/srrg_joystick_teleop/lib/srrg_joystick_teleop/joy_teleop_node 

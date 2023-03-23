@@ -1,0 +1,4 @@
+open cappero_diag_slam_stage.conf
+exec source_ros open
+add_canvas slam slam
+run runner_live

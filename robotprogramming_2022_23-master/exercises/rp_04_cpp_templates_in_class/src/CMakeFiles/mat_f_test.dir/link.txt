@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -march=native  -rdynamic CMakeFiles/mat_f_test.dir/mat_f_test.cpp.o CMakeFiles/mat_f_test.dir/mat_f.cpp.o CMakeFiles/mat_f_test.dir/vec_f.cpp.o  -o mat_f_test 

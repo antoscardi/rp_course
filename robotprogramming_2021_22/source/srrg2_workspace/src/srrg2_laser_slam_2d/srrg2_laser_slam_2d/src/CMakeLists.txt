@@ -1,0 +1,1 @@
+add_subdirectory(srrg2_laser_slam_2d)

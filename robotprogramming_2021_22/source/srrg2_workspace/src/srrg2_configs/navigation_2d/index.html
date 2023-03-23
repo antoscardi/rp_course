@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+ <html>
+ <head> <title>SRRG Web Controller</title>
+ <script src="./srrg.js" type="text/javascript"></script>
+ </head> <body><p>    <table border="3">
+       <tr>
+         <td valign="top"> Label </td> 
+         <td valign="top"> Status </td> 
+         <td valign="top" colspan="4">  </td> 
+         <td valign="top"> <button type="button" onclick="sendPacket('dump null')" /> hide </td> 
+      </tr>
+    <tr>
+      <td valign="top"> 01_roscore</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start 01_roscore')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt 01_roscore')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause 01_roscore')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume 01_roscore')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate 01_roscore')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump 01_roscore')" /> show</td>
+    <tr>
+      <td valign="top"> 02_stage</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start 02_stage')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt 02_stage')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause 02_stage')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume 02_stage')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate 02_stage')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump 02_stage')" /> show</td>
+    <tr>
+      <td valign="top"> 03_mapserver</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start 03_mapserver')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt 03_mapserver')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause 03_mapserver')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume 03_mapserver')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate 03_mapserver')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump 03_mapserver')" /> show</td>
+    <tr>
+      <td valign="top"> 04_rviz</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start 04_rviz')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt 04_rviz')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause 04_rviz')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume 04_rviz')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate 04_rviz')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump 04_rviz')" /> show</td>
+    <tr>
+      <td valign="top"> 05_localize</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start 05_localize')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt 05_localize')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause 05_localize')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume 05_localize')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate 05_localize')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump 05_localize')" /> show</td>
+    <tr>
+      <td valign="top"> 06_planner</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start 06_planner')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt 06_planner')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause 06_planner')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume 06_planner')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate 06_planner')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump 06_planner')" /> show</td>
+    <tr>
+      <td valign="top"> 07_joy</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start 07_joy')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt 07_joy')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause 07_joy')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume 07_joy')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate 07_joy')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump 07_joy')" /> show</td>
+    <tr>
+      <td valign="top"> 07a_follower(static)</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start 07a_follower(static)')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt 07a_follower(static)')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause 07a_follower(static)')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume 07a_follower(static)')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate 07a_follower(static)')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump 07a_follower(static)')" /> show</td>
+    <tr>
+      <td valign="top"> 07b_follower(dynamic)</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start 07b_follower(dynamic)')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt 07b_follower(dynamic)')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause 07b_follower(dynamic)')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume 07b_follower(dynamic)')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate 07b_follower(dynamic)')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump 07b_follower(dynamic)')" /> show</td>
+     </table> </p> 
+<p>    <div id='msgBox'>Nothing sent yet!</div>  </p>
+ </body>

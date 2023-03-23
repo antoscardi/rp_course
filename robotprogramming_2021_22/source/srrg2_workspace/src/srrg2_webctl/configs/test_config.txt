@@ -1,0 +1,6 @@
+s1 ../simple 500
+s2 ../simple 1000
+s3 ../simple 3000
+s4 ../simple 5000
+s4 ../simple 10000
+

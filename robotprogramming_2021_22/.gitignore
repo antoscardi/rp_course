@@ -1,0 +1,8 @@
+*.o
+*~
+build/
+source/srrg2_workspace/build/
+source/srrg2_workspace/devel/
+source/srrg2_workspace/logs/
+source/srrg2_workspace/src/CMakeLists.txt
+source/srrg2_workspace/.catkin_tools

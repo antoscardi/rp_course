@@ -1,0 +1,11 @@
+01_roscore   /opt/ros/<ROS_DISTRO>/bin/roscore
+02_stage     /opt/ros/<ROS_DISTRO>/lib/stage_ros/stageros cappero_laser_odom_diag_obstacle_2020-05-06-16-26-03.world
+03_mapserver <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_map_server/map_server cappero_laser_odom_diag_2020-05-06-16-26-03.yaml
+04_rviz     /opt/ros/<ROS_DISTRO>/bin/rviz
+05_localize <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_executor/srrg2_shell -ns run_localizer_live_ms.srrg
+06_planner  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_executor/srrg2_shell -ns run_planner_live_ms_nogui.srrg
+07a_follower(static)  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/path
+07b_follower(dynamic)  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/local_path
+07_joy      <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg_joystick_teleop/joy_teleop_node
+08_slam_offline(real) /usr/bin/xterm -e /bin/bash --init-file run_cappero_diag_slam.sh
+09_slam_online(simulated)  /usr/bin/xterm -e /bin/bash --init-file run_cappero_diag_slam_stage.sh

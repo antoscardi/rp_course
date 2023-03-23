@@ -1,0 +1,7 @@
+01_roscore   /opt/ros/<ROS_DISTRO>/bin/roscore
+02_mapserver <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_map_server/map_server cappero_laser_odom_diag_2020-05-06-16-26-03.yaml
+03_localize <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_executor_nogui/srrg2_shell -ns localizer_2d.srrg
+04_planner  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_executor_nogui/srrg2_shell -ns planner_2d.srrg
+05a_follower(static)  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/path
+05b_follower(dynamic)  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/local_path
+06_joy      <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg_joystick_teleop/joy_teleop_node

@@ -1,0 +1,5 @@
+open planner_live_ms.conf
+exec source open
+exec sink open
+exec requestor requestMap
+run runner

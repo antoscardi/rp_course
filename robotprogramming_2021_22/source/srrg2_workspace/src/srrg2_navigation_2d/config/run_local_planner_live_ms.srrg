@@ -1,0 +1,4 @@
+open local_planner_live_ms.conf
+exec source open
+exec sink open
+run source pipeline

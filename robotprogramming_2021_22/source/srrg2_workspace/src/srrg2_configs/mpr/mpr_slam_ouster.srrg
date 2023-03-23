@@ -1,0 +1,10 @@
+#!/usr/bin/env srrg2_shell
+echo ****************************************
+echo <ARG_0>: runs mpr in slam mode on an ouster bag
+echo usage: <ARG_0> "bagfile"
+echo filename: "<ARG_1>"
+echo ****************************************
+open mpr_slam_ouster.conf
+set source filename <ARG_1>
+add_canvas g graph_manager
+run runner

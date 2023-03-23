@@ -1,0 +1,6 @@
+open localizer_live_ms.conf
+exec source open
+exec sink open
+exec requestor requestMap
+exec localizer startGlobal
+run runner

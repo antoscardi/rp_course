@@ -1,0 +1,8 @@
+Web controller:
+1. make a config text file, each line contains
+<label> <command line>
+2. start *from this folder*
+./proc_webserver config file
+3. connect with a webserver to <ip>:9001
+
+control the processes via web

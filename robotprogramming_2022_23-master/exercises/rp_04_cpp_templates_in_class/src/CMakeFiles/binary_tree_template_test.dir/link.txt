@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -march=native  -rdynamic CMakeFiles/binary_tree_template_test.dir/binary_tree_template_test.cpp.o  -o binary_tree_template_test 

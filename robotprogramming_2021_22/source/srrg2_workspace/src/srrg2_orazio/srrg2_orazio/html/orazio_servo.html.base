@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orazio Robot Web Controller</title>
+    <script src="orazio.js" type="text/javascript"></script>
+  </head>
+  <body>
+    #include "menu.html"
+    <p>
+      <H1>Servo Settings</H1>
+    </p>
+    <p>
+      <h2>
+	<a href="orazio_servo_help.html"> Click here for help </a>
+      </h2>
+    </p>
+    <p>
+      <table border="2">
+	<tr> 
+	  <td> <div id='msgBox'>Nothing sent yet!</div> </td>
+	  <td>
+	    #include"servo_params.html"
+  	  </td>
+	</tr>
+	<tr>
+          <table border="2">
+          <tr>
+	    <td> <button type="button" onclick="stop()">STOP</button> </td>
+	    <td> <button type="button" onclick="sendPacket('servo_params')">SEND</button> </td> 
+	    <td> <button type="button" onclick="storeParams('servo_params')">STORE</button> </td> 
+	    <td> <button type="button" onclick="fetchParams('servo_params')">FETCH</button> </td> 
+	    <td> <button type="button" onclick="requestParams('servo_params')">REQUEST</button> </td>
+          </tr>
+          </table>
+  	</tr>
+	<tr>
+	  #include"servo_control.html"
+  	</tr>
+	<tr>
+	  <td> <button type="button" onclick="stop()">STOP</button> </td>
+	  <td> <button type="button" onclick="sendPacket('servo_control')">SEND</button> </td> 
+  	</tr>
+      </table>
+    </p>
+  </body>
+</html>

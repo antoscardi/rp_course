@@ -1,0 +1,9 @@
+01_roscore   /opt/ros/<ROS_DISTRO>/bin/roscore
+02_stage     /opt/ros/<ROS_DISTRO>/lib/stage_ros/stageros cappero_laser_odom_diag_obstacle_2020-05-06-16-26-03.world
+03_mapserver /home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/devel/lib/srrg2_map_server/map_server cappero_laser_odom_diag_2020-05-06-16-26-03.yaml
+04_rviz     /opt/ros/<ROS_DISTRO>/bin/rviz
+05_localize /home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/devel/lib/srrg2_executor/srrg2_shell -ns localizer_2d.srrg
+06_planner  /home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/devel/lib/srrg2_executor/srrg2_shell -ns planner_2d.srrg
+07a_follower(static)  /home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/devel/lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/path
+07b_follower(dynamic)  /home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/devel/lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/local_path
+07_joy      /home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/devel/lib/srrg_joystick_teleop/joy_teleop_node

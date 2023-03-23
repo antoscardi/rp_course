@@ -1,0 +1,6 @@
+/media/giorgio/data/teaching/teaching/robotprogramming_2022_23/exercises/rp_04_cpp_templates_in_class/src/CMakeFiles/rebuild_cache.dir
+/media/giorgio/data/teaching/teaching/robotprogramming_2022_23/exercises/rp_04_cpp_templates_in_class/src/CMakeFiles/binary_tree_template_mys_test.dir
+/media/giorgio/data/teaching/teaching/robotprogramming_2022_23/exercises/rp_04_cpp_templates_in_class/src/CMakeFiles/binary_tree_template_test.dir
+/media/giorgio/data/teaching/teaching/robotprogramming_2022_23/exercises/rp_04_cpp_templates_in_class/src/CMakeFiles/mat_template_test.dir
+/media/giorgio/data/teaching/teaching/robotprogramming_2022_23/exercises/rp_04_cpp_templates_in_class/src/CMakeFiles/edit_cache.dir
+/media/giorgio/data/teaching/teaching/robotprogramming_2022_23/exercises/rp_04_cpp_templates_in_class/src/CMakeFiles/mat_f_test.dir

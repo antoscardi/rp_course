@@ -1,0 +1,7 @@
+#!/usr/bin/env srrg2_shell
+open localizer_2d.conf
+exec source open
+exec sink open
+exec requestor requestMap
+exec localizer startGlobal
+run runner

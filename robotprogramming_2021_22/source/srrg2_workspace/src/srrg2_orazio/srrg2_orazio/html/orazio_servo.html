@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orazio Robot Web Controller</title>
+    <script src="orazio.js" type="text/javascript"></script>
+  </head>
+  <body>
+<table border="2">
+  <tr>
+    <H2>
+    <td> <a href="orazio_system.html?system" target="_parent"> System </a> </td>
+    <td> <a href="orazio_joint0.html?joint0" target="_parent"> Joint0 </a> </td>
+    <td> <a href="orazio_joint1.html?joint1" target="_parent"> Joint1 </a> </td>
+    <td> <a href="orazio_joint2.html?joint2" target="_parent"> Joint2 </a> </td>
+    <td> <a href="orazio_joint3.html?joint3" target="_parent"> Joint3 </a> </td>
+    <td> <a href="orazio_drive.html?kinematics" target="_parent"> Drive </a> </td>
+    <td> <a href="orazio_sonar.html?sonar" target="_parent"> Sonar </a> </td>
+    <td> <a href="orazio_servo.html?servo" target="_parent"> Servo </a> </td>
+    <td> <a href="orazio_imu.html?imu" target="_parent"> IMU </a> </td>
+    <td> <a href="orazio_joystick.html?kinematics" target="_parent"> Joystick </a> </td>
+    </H2>
+  </tr>
+</table>
+    <p>
+      <H1>Servo Settings</H1>
+    </p>
+    <p>
+      <h2>
+ <a href="orazio_servo_help.html"> Click here for help </a>
+      </h2>
+    </p>
+    <p>
+      <table border="2">
+ <tr>
+   <td> <div id='msgBox'>Nothing sent yet!</div> </td>
+   <td>
+<p> <table border="3">
+<tr>
+   <td valign="top"> servo_params.header.system_enabled </td>
+   <td> <input width="100px" type="text" id="servo_params_header_system_enabled" /> </td>
+   <td> <button type="button" onclick="setVariable('servo_params.header.system_enabled')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> servo_params.header.update_enabled </td>
+   <td> <input width="100px" type="text" id="servo_params_header_update_enabled" /> </td>
+   <td> <button type="button" onclick="setVariable('servo_params.header.update_enabled')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> servo_params.servo_pins[0] </td>
+   <td> <input width="100px" type="text" id="servo_params_servo_pins_0_" /> </td>
+   <td> <button type="button" onclick="setVariable('servo_params.servo_pins[0]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> servo_params.servo_pins[1] </td>
+   <td> <input width="100px" type="text" id="servo_params_servo_pins_1_" /> </td>
+   <td> <button type="button" onclick="setVariable('servo_params.servo_pins[1]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> servo_params.servo_pins[2] </td>
+   <td> <input width="100px" type="text" id="servo_params_servo_pins_2_" /> </td>
+   <td> <button type="button" onclick="setVariable('servo_params.servo_pins[2]')"/> SET</td>
+</tr>
+</table> </p>
+     </td>
+ </tr>
+ <tr>
+          <table border="2">
+          <tr>
+     <td> <button type="button" onclick="stop()">STOP</button> </td>
+     <td> <button type="button" onclick="sendPacket('servo_params')">SEND</button> </td>
+     <td> <button type="button" onclick="storeParams('servo_params')">STORE</button> </td>
+     <td> <button type="button" onclick="fetchParams('servo_params')">FETCH</button> </td>
+     <td> <button type="button" onclick="requestParams('servo_params')">REQUEST</button> </td>
+          </tr>
+          </table>
+   </tr>
+ <tr>
+<p> <table border="3">
+<tr>
+   <td valign="top"> servo_control.servo_value[0] </td>
+   <td> <input width="100px" type="text" id="servo_control_servo_value_0_" /> </td>
+   <td> <button type="button" onclick="setVariable('servo_control.servo_value[0]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> servo_control.servo_value[1] </td>
+   <td> <input width="100px" type="text" id="servo_control_servo_value_1_" /> </td>
+   <td> <button type="button" onclick="setVariable('servo_control.servo_value[1]')"/> SET</td>
+</tr>
+<tr>
+   <td valign="top"> servo_control.servo_value[2] </td>
+   <td> <input width="100px" type="text" id="servo_control_servo_value_2_" /> </td>
+   <td> <button type="button" onclick="setVariable('servo_control.servo_value[2]')"/> SET</td>
+</tr>
+</table> </p>
+   </tr>
+ <tr>
+   <td> <button type="button" onclick="stop()">STOP</button> </td>
+   <td> <button type="button" onclick="sendPacket('servo_control')">SEND</button> </td>
+   </tr>
+      </table>
+    </p>
+  </body>
+</html>

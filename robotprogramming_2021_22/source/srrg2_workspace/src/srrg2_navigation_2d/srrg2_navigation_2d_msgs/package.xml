@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>srrg2_navigation_2d_msgs</name>
+  <version>0.9.0</version>
+  <description>The srrg2_navigation_2d_messages package</description>
+
+  <maintainer email="giorgio@todo.todo">giorgio</maintainer>
+
+  <license>TODO</license>
+
+  <!-- ia depend includes build and run dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <!-- ia ros dependencies -->
+  <depend>roscpp</depend>
+  <depend>tf</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <!-- <depend>cv_bridge</depend> -->
+
+  <!-- ia srrg dependencies -->
+  <depend>srrg_cmake_modules</depend>
+  
+</package>

@@ -1,0 +1,5 @@
+serial_device: /dev/ttyACM0
+frame_id:      /laser_frame
+topic:         /base_scan
+model:         urg
+time_filter_calib_rounds: 100

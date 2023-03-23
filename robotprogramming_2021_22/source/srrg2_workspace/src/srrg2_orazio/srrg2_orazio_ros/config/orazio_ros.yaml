@@ -1,0 +1,29 @@
+#orazio robot node
+#
+serial_device:          /dev/ttyUSB0
+comm_speed:             115200
+odom_topic:             /odom
+joint_state_topic:      /joint_state
+sonar_topic_prefix:     /sonar
+cmd_vel_topic:          /cmd_vel
+cmd_joints_jog_topic:   /cmd_joints_jog
+odom_frame_id:          /odom
+base_link_frame_id:     /base_link
+sonar_frame_id_prefix:  /sonar_frame
+publish_tf:             true
+time_filter_calib_rounds: 100
+tf: [
+         {
+                reference: /base_link,
+                target:    /laser_frame,
+                translation: [0., 0., 0. ],
+                rotation:    [0., 0., 0., 1. ]
+         },
+         {
+                reference: /base_link,
+                target:    /camera_frame,
+                translation: [0., 0., 0. ],
+                rotation:    [0.5, -0.5, 0.5, -0.5 ]
+         }
+         # add here your transforms
+     ]

@@ -1,0 +1,9 @@
+01_roscore   /opt/ros/<ROS_DISTRO>/bin/roscore
+02_stage     /opt/ros/<ROS_DISTRO>/lib/stage_ros/stageros aula41.world
+03_mapserver <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_map_server/map_server aula41.yaml
+04_rviz     /opt/ros/<ROS_DISTRO>/bin/rviz
+05_localize <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_executor/srrg2_shell -ns localizer_2d.srrg
+06_planner  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_executor/srrg2_shell -ns planner_2d.srrg
+07a_follower(static)  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/path
+07b_follower(dynamic)  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/local_path
+07_joy      <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg_joystick_teleop/joy_teleop_node

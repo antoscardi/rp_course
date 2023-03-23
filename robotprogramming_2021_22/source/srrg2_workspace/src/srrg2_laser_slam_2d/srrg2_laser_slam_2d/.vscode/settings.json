@@ -1,0 +1,10 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/omar/RP/robotprogramming_2021_22/source/srrg2_workspace/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "files.associations": {
+        "*.tcc": "cpp",
+        "vector": "cpp"
+    }
+}
