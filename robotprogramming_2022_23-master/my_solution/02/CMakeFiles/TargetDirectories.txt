@@ -1,0 +1,15 @@
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/CMakeFiles/exercise_2.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/CMakeFiles/edit_cache.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/CMakeFiles/rebuild_cache.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/CMakeFiles/edit_cache.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/CMakeFiles/rebuild_cache.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/linalg/CMakeFiles/vec_f_library.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/linalg/CMakeFiles/mat_f_library.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/linalg/CMakeFiles/vec_f_test.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/linalg/CMakeFiles/mat_f_test.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/linalg/CMakeFiles/edit_cache.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/linalg/CMakeFiles/rebuild_cache.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/btree/CMakeFiles/btree_library.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/btree/CMakeFiles/btree_test.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/btree/CMakeFiles/edit_cache.dir
+/home/anto/rp_course/robotprogramming_2022_23-master/my_solution/02/src/btree/CMakeFiles/rebuild_cache.dir
